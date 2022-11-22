@@ -1,0 +1,382 @@
+<html>
+<head>
+    <style>
+        body {
+  border-style: inset;
+  border-color: coral;text-align: center;
+  border-width: 7px;
+}
+#div{
+    margin-top: 10px;border: gold inset 2px;background: rgb(216, 206, 206);color: #000;
+    font-style: oblique;font-family: 'Courier New', Courier, monospace;font-weight: bolder;
+    font-size: 40px;border-radius: 30px;margin-bottom: 20px;
+}
+        #id1{ border: aqua solid 4px;text-align: center;
+    width: 260px;
+    border-radius: 20px;
+    padding: 10px;
+    color: beige;
+    background: #000;
+
+        }
+.btn{
+    border: rgb(200, 235, 235) solid 4px;text-align: center;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(65, 156, 241);
+    background: #000;
+}
+#b1, #b2, #b3 ,#b4, #b5, #b6{background: #000;text-align: center;
+    color:red;
+    text-align: center;
+    text-shadow: brown;
+    font-size: 20px;
+
+}
+    </style>
+</head>
+<body>
+    <div id="div">MCQ GAME</div>
+    <button id="b1" onclick="noun()">noun</button>
+    
+    <br>
+    <audio  id="music">
+        <source src="" type="audio/ogg">
+        <source src="" type="audio/mpeg">
+        
+        </audio>
+    <button id="pause" onclick="next()">PAUSE</button>
+    <p id="id1"></p>
+    <p id="id2" class="btn"></p>
+    <p id="id3" class="btn"></p>
+    <p id="id4" class="btn"></p>
+        
+    <img src="" height="200px" width="200px" id="img" alt="">
+    
+    
+    
+    
+    
+    
+    <script>
+        let i=0;
+       
+        var realAns = ["ra1", "ra2", "ra3", "ra4", "ra5", "ra6", "ra7", "ra8"];
+        function noun(){
+            var q = ["It ____ easy.", "There ____ some people waiting to see you.",
+             "There ____ some money to pay into the bank.",
+             "They ____ coming.", "We ____ nearly ready.",
+             " It ____ impossible.", " He ____ unfriendly.", "You ____ not to blame."];
+        var ans = ["is", "is", "is", "are", "are", "is", "is", "are"];
+        change(q ,ans);
+        }
+        function next(){  
+            var myMusic= document.getElementById("music");
+
+            
+            myMusic.pause();
+        }
+
+
+        function change(q,ans){
+            document.getElementById("img").style.display="none";
+        document.getElementById("img").src="";
+            let op=["is","am","are"];
+            if (i > 6) { i = -1; }
+            i=i+1;
+
+            
+            document.getElementById("id1").innerHTML=q[i];
+            document.getElementById("id2").innerHTML=op[0];
+            document.getElementById("id3").innerHTML=op[1];
+            document.getElementById("id4").innerHTML=op[2];
+            document.getElementById("id2").addEventListener("click", function () {
+                    if (op[0] === ans[i]) {
+                        document.getElementById("id2").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id2").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })
+            document.getElementById("id3").addEventListener("click", function () {
+                    if (op[1] === ans[i]) {
+                        document.getElementById("id3").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id3").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })<html>
+<head>
+    <style>
+        body {
+  border-style: inset;
+  border-color: coral;text-align: center;
+  border-width: 7px;
+}
+#div{
+    margin-top: 10px;border: gold inset 2px;background: rgb(216, 206, 206);color: #000;
+    font-style: oblique;font-family: 'Courier New', Courier, monospace;font-weight: bolder;
+    font-size: 40px;border-radius: 30px;margin-bottom: 20px;
+}
+        #id1{ border: aqua solid 4px;text-align: center;
+    width: 260px;
+    border-radius: 20px;
+    padding: 10px;
+    color: beige;
+    background: #000;
+
+        }
+.btn{
+    border: rgb(200, 235, 235) solid 4px;text-align: center;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(65, 156, 241);
+    background: #000;
+}
+#b1, #b2, #b3 ,#b4, #b5, #b6{background: #000;text-align: center;
+    color:red;
+    text-align: center;
+    text-shadow: brown;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    {{>header}}
+    <div id="div">MCQ GAME</div>
+    <button id="b1" onclick="noun()">noun</button>
+    <button id="b2" onclick="article()">Article</button>
+    <button id="b3" onclick="model1()">Model part-1</button>
+    <button id="b4" onclick="prepo1()">Preposition part-1</button>
+ 
+    <br>
+    <audio  id="music">
+        <source src="" type="audio/ogg">
+        <source src="" type="audio/mpeg">
+        
+        </audio>
+    <button id="pause" onclick="next()">PAUSE</button>
+    <p id="id1"></p>
+    <p id="id2" class="btn"></p>
+    <p id="id3" class="btn"></p>
+    <p id="id4" class="btn"></p>
+    <p id="id5" class="btn"></p>
+        
+    <img src="" height="200px" width="200px" id="img" alt="">
+    
+    
+    
+    
+    
+    
+    <script>
+        let i=-1;
+        var q=[];
+        var ans=[];
+        
+      
+        var realAns = ["ra1", "ra2", "ra3", "ra4", "ra5", "ra6", "ra7", "ra8"];
+        function noun(){
+            q = ["It ____ easy.", "There ____ some people waiting to see you.",
+             "There ____ some money to pay into the bank.",
+             "They ____ coming.", "We ____ nearly ready.",
+             " It ____ impossible.", " He ____ unfriendly.", "You ____ not to blame."];
+         ans = ["is", "is", "is", "are", "are", "is", "is", "are"];let op=["is","am","are","none of these"];
+        change(q ,ans,op);
+                    }
+        function article(){
+            q = ["He is --- American ","the train is late by half ---- hour."," Is he ---- Russian?","Kutub minar is ---- highest             tower in India."
+            ," Sonpeth is is ---- small town in Haryana."," These pictures belongs to --himalayas."," This is ------ ass."," That is ------ book,"," you are either ------- thief or police.",
+            " He is ---- man who I know is corrupt"];let op=["a","an","the","none of these"];
+         ans = ["an", "an", "a", "the", "a", "the", "an", "a","a","the"];
+        change(q ,ans,op);
+                    }
+        function model1(){
+            q = ["I ---- been 17 next year."," They ---- arrive at Agra fort .","we --- be late ..",
+            "Surely you --- not beat me."," you --- not be idle.","He --- have known better ..",
+            "if he were here I --- tell him. .","She said they -- come.."," I said that I -- go .","if it -- rain they will not come. .",
+            "They -- obey whether he likes it or not.."," You -- pass if you work hard"];let op=["shall","will","should ","would"];
+         ans = ["shall", "will", "shall", "shall", "should", "should", "would", "would","should","should","shall","will"];
+        change(q ,ans,op);
+                    }
+        function model1(){
+            q = ["We have our food and then go to school -- 10 o’clock. ."," you must return this book latest -- Monday . .",
+            " our train did not stop --- some of the stations on the way. ."," He worked --- his Desk for over two hours. ."," My friend Lives on mussoorie.  .",
+            " we put some money ---- the central bank.  .","You should learn the multiplication table -- heart.  .",
+            "At what  time is it -- your watch.  .","The building was destroyed --- fire.  .",
+            " I think I will part it  -- my next play. ."," The hunter was aiming --- a wild bear."];let op=["at","in","on","by"];
+         ans = ["at", "by", "at", "at", "on", "by", "by", "by","in","at"];
+        change(q ,ans,op);
+                    }
+        function prepo1(){
+            q = ["We have our food and then go to school -- 10 o’clock. ."," you must return this book latest -- Monday . .",
+            " our train did not stop --- some of the stations on the way. ."," He worked --- his Desk for over two hours. ."," My friend Lives on mussoorie.  .",
+            " we put some money ---- the central bank.  .","You should learn the multiplication table -- heart.  .",
+            "At what  time is it -- your watch.  .","The building was destroyed --- fire.  .",
+            " I think I will part it  -- my next play. ."," The hunter was aiming --- a wild bear."];let op=["at","in","on","by"];
+         ans = ["at","by", "at", "at", "on", "by", "by", "by","in","at"];
+        change(q ,ans,op);
+                    }
+        
+
+
+
+
+
+        function next(){  
+            var myMusic= document.getElementById("music");            
+            myMusic.pause();
+                    }
+
+
+        function change(q,ans,op){
+            document.getElementById("img").style.display="none";
+        document.getElementById("img").src="";
+            
+            if (i > q.length) { i = -1; }
+            i=i+1;
+
+            
+            document.getElementById("id1").innerHTML=q[i];
+            document.getElementById("id2").innerHTML=op[0];
+            document.getElementById("id3").innerHTML=op[1];
+            document.getElementById("id4").innerHTML=op[2];
+            document.getElementById("id5").innerHTML=op[3];
+            document.getElementById("id2").addEventListener("click", function () {
+                    if (op[0] === ans[i]) {
+                        document.getElementById("id2").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id2").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })
+            document.getElementById("id3").addEventListener("click", function () {
+                    if (op[1] === ans[i]) {
+                        document.getElementById("id3").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id3").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })
+            document.getElementById("id4").addEventListener("click", function () {
+                    if (op[2] === ans[i]) {
+                        document.getElementById("id4").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id4").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })
+            document.getElementById("id5").addEventListener("click", function () {
+                    if (op[2] === ans[i]) {
+                        document.getElementById("id5").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id5").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })
+        }
+        function fun(){
+                        document.getElementById("img").src="https://image.shutterstock.com/image-vector/emoticon-big-toothy-smile-600w-110202812.jpg";
+                        document.getElementById("img").style.display="inline";
+                        var myMusic= document.getElementById("music");
+                        myMusic.src="a.mp3";myMusic.play();
+
+                    }
+           function funwrong(){
+            document.getElementById("img").src="https://previews.123rf.com/images/alvincadiz/alvincadiz1604/alvincadiz160400358/56426319-vector-illustration-of-smiley-emoticon-sad-face.jpg";
+                        document.getElementById("img").style.display="inline";
+                        var myMusic= document.getElementById("music");
+                        myMusic.src="khatam.mp3";myMusic.play();
+           }
+
+
+
+
+
+ 
+            document.getElementById("id4").addEventListener("click", function () {
+                    if (op[2] === ans[i]) {
+                        document.getElementById("id4").innerHTML = "right";
+                        fun();
+                    } else {
+                        document.getElementById("id4").innerHTML = "wrong";
+                        funwrong();
+                    }
+                })
+        }
+        function fun(){
+                        document.getElementById("img").src="https://image.shutterstock.com/image-vector/emoticon-big-toothy-smile-600w-110202812.jpg";
+                        document.getElementById("img").style.display="inline";
+                        var myMusic= document.getElementById("music");
+                        myMusic.src="a.mp3";myMusic.play(); <script>var msg = new SpeechSynthesisUtterance();
+function call(){
+	let val=document.getElementById("t1").value;console.log(val);
+        const api_url = "https://api.dictionaryapi.dev/api/v2/entries/en/"+val;
+        async function User() {
+        
+            // Making an API call (request)
+            // and getting the response back
+            const response = await fetch(api_url);
+        
+            // Parsing it to JSON format
+            const data = await response.json();
+
+			// rishabh to change into string
+			str = JSON.stringify(data);
+            console.log(data[0].word);
+            console.log(data[0].phonetics);
+            console.log(data[0].orgin);
+            console.log(data[0].meanings[0].partOfSpeech);
+            console.log(data[0].meanings[0].definitions[0].definition);
+            // console.log(str);
+			// rishabh into array from objk
+			const propertyNames = Object.keys(data);
+
+console.log(propertyNames);
+
+
+
+
+msg.text = "The first meaning "+val+" is"+data[0].meanings[0].definitions[0].definition+"and second meaning of"+val+" is"+data[0].meanings[1].definitions[0].definition
++"thankyou for searching     Have a nice day";
+window.speechSynthesis.speak(msg);
+
+var myMusic= document.getElementById("music");
+myMusic.src=data[0].phonetics[0].audio;
+// myMusic.play();
+
+document.getElementById("p1").innerHTML=data[0].meanings[0].definitions[0].definition;
+document.getElementById("p2").innerHTML=data[0].meanings[1].definitions[0].definition;
+document.getElementById("p3").innerHTML=data[0].meanings[0].definitions[0].Example;
+document.getElementById("p4").innerHTML=data[0].phonetic;
+	 
+
+	}
+User();}
+
+                    }
+           function funwrong(){
+            document.getElementById("img").src="https://previews.123rf.com/images/alvincadiz/alvincadiz1604/alvincadiz160400358/56426319-vector-illustration-of-smiley-emoticon-sad-face.jpg";
+                        document.getElementById("img").style.display="inline";
+                        var myMusic= document.getElementById("music");
+                        myMusic.src="khatam.mp3";myMusic.play();
+           }
+
+
+
+
+
+    </script>
+    {{>footer}}
+</body>
+
+</html>

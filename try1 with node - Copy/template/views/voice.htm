@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script>$(function (){$('#h').load('/partials/header.htm');});</script>
+    <script>$(function (){$('#f').load('/partials/footer.htm');});</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="../../public/noun.css"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <style>
+        
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 15%;
+    padding: 10px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 85%;
+    padding: 10px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 9px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  
+/* 33333333333333333333333333333333333333333333333333333333333hover of all lessons name buttons */
+#b1 {
+    display: inline-block;  padding: 15px 25px;  font-size: 24px;  cursor: pointer;  
+    text-align: center;  text-decoration: none;  outline: none;
+    color: #fff;  background-color: #8ec5db;  border: none;  border-radius: 15px; 
+    box-shadow: 0 9px #999;}
+#b1:hover {background-color: #0db437}
+#b1:active {
+background-color: #3e8e41;box-shadow: 0 5px #666;transform: translateY(4px);}
+
+
+    </style>
+</head>
+<body>
+    
+<div id="h"></div><h2 id="noun">Noun</h2>
+<p>Nouns are words that indicate a person, place, or thing.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="noun.htm" id="b1">noun</a></li>
+      <li><a href="pronoun.htm" id="b1">Pronoun</a></li>
+      <li><a href="subject.htm" id="b1">Sentence</a></li>
+      <li><a href="voice.htm" id="b1">voice</a></li>
+      <li><a href="dictionary.htm" id="b1">dictionary</a></li>
+      <li><a href="MCQgame.htm" id="b1">MCQgame</a></li>
+      <li><a href="vocabAmerican.htm" id="b1">Vocabalary 1</a></li>     
+      <li><a href="vocabProverb.htm" id="b1">Vocabalary 2</a></li>
+      <li><a href="VocabTravel.htm" id="b1">Vocabalary 2</a></li>
+      <li><a href="signin.htm" id="b1">SignIN</a></li>
+
+      
+    </ul>
+  </div>
+  <script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+  <!-- 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222right menu 75%-->
+  <div class="right" style="background-color:#ddd;">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Voice
+          </button>
+        </h2></div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          voice refers to you there is work done or work is done by the people or people is doing work. These are the two similar way to say same sentence in different form. Types of voiceThere are two types of voice active voice passive voice</div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           Type of voice
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+      There are two types of voice <br>active voice <br>passive voice<br>Active voice=== a voice is said to be in the active voice when it form shows the people or the things denoted by the subject does something.<br>Passive voice <br>---a verb is said to be in the passive voice when it form shows that something is done to the people or things denoted by the subject.        </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Methodology to transform active voice into passive voice
+          <br>First rule
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+    the subject of active voice is changed into object of passive voice and the object of active voice is changed into subject or passive voice<br> for example<br>
+Active he helps me.<br>
+Passive I am helped by him <br>
+Active Mohan beats Sohan.<br>
+Passive Sohan is beaten by Mohan.<br>
+      </div> </div>   <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Second rule
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            the pronoun that are used in place of object in the active voice are converted into to subject into to following way<br>
+Her is convert into she<br>
+Us is changed into we<br>
+Him is change into he <br>then is change into they<br> me is change into I<br>
+        </div></div></div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Third rule
+
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+           "BY" is added before the object of passive voice<br>
+I am eating a mango .---a mango is being eaten by me.<br>
+He’s helping his mother
+---His mother is being helped by him </div>
+        </div> </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Fourth rule
+
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+            the pronoun that comes after by in the passive voice are changed into following <br>for example<br>
+We are changed into US <br>he is change into him <br>she is change into her <br>they are changed into them<br> I is change into me  </div>
+        </div> </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Fifth rule
+
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+           verb third form is always apply in voice.
+            
+            
+        </div> 
+    </div></div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      Tense rule <br>Simple or indefinite tense
+          
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        To convert into active to passive voice we always use the helping verb of continuous tense.<br>Present simple
+         tense<br> we use helping verb is/am/are.<br>Past simple simple tense we use helping verb was /were<br>Future simple 
+         tense we use helping verb will be/shall be<br>.For example<br> simple present tense<br>I help you--- you are helped by 
+         me<br>She teaches you ---you are taught by her<br>Example simple past tense<br>I ate mango ---a mango was eaten by me <br>he wrote
+          the letter beautifully ---the latter was beautifully written <br>the poem opened the gate--- the gate was opened by
+           the poem<br>.Example of future simple tense<br>
+
+        She will be teach me ---I shall be torch by her<br> I shall help you--- you will be held by me we shall discuss the
+         matter tomorrow ---the matter will be discussed tomorrow<br> we will execute all the order promptly--- all the orders 
+         will be promptly executed.<br>
+    </div> 
+</div></div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingNine">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      continuous tense
+
+    </button>
+  </h2>
+  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+In continuous tense we use a Word “being” after the helping verb<br>For example<br> present continuous tance<br>I am eating a 
+mango--- a mango is being eaten by me <br>they are discussing the matter--- the matter is being discussed by them<br> they are 
+repairing the bridge ---the bridge is being repaired by them<br>Past continuous tense<br> the doctor was treating the patient--
+ the patient was being treated by doctor.<br> They were killing animal for nothing.--- Animals were being killed for
+  nothing<br>Future continuous tense<br>They will be making a diagram ---A diagram will be being made by them.
+</div> 
+</div></div></div></div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingNine">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      perfect tense
+
+    </button>
+  </h2>
+  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+<h3>perfect tense</h3>  we add “been” after helping verb.<br>Present perfect tense<br>I have finished the work --the 
+work has been finished by me <br>her sister has cheated her --she has been cheated by her sister<br>Shyam has disturbed me --
+I have been disturbed by Shyam<br>Past perfect tense<br>They had won the match--The match had been born by them<br>Raju had
+ completed the work-- the work had been completed by Raju<br>Future perfect tense<br>He will have informed us-- we shall have
+  been informed by him<br>Aisa will have written the book. --The book will have been written by himAisa
+</div> 
+</div></div></div></div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingNine">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      continuous tense
+
+    </button>
+  </h2>
+  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+In continuous tense we use a Word “being” after the helping verbFor example present continuous tanceI am eating a mango a mango is being eaten by me they are discussing the matter the matter is being discussed by them they are repairing the bridge the bridge is being repaired by themPast continuous tense the doctor was treating the patient the patient was being treated by doctor. They were killing animal for nothing. Animals were being killed for nothingFuture continuous tenseThey will be making a diagramA diagram will be being made by them.
+</div> 
+</div></div></div></div>
+  
+<div id="f"></div>
+
+</body>
+</html>

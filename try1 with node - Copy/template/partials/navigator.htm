@@ -1,0 +1,35 @@
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="noun" id="b1">noun</a></li>
+      <li><a href="pronoun" id="b1">Pronoun</a></li>
+      <li><a href="subject" id="b1">Sentence</a></li>
+      <li><a href="voice" id="b1">voice</a></li>
+      <li><a href="dictionary" id="b1">dictionary</a></li>
+      <li><a href="MCQgame" id="b1">MCQgame</a></li>
+      <li><a href="vocabAmerican" id="b1">Vocabalary 1</a></li>     <li><a href="#" id="b1">noun</a></li>
+      <li><a href="vocabProverb" id="b1">Vocabalary 2</a></li>
+      <li><a href="VocabTravel" id="b1">Vocabalary 2</a></li>
+      <li><a href="signin" id="b1">SignIN</a></li>
+
+      
+    </ul>
+  </div>
+  <script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>

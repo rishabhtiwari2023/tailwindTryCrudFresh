@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="../../public/noun.css"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<script>$(function (){$('#h').load('/partials/header.htm');});</script>
+<script>$(function (){$('#f').load('/partials/footer.htm');});</script><style>
+        
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create a column layout with Flexbox */
+  .row {
+    display: flex;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 15%;
+    padding: 10px 0;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 85%;
+    padding: 10px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 9px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  
+/* 33333333333333333333333333333333333333333333333333333333333hover of all lessons name buttons */
+#b1 {
+    display: inline-block;  padding: 15px 25px;  font-size: 24px;  cursor: pointer;  
+    text-align: center;  text-decoration: none;  outline: none;
+    color: #fff;  background-color: #8ec5db;  border: none;  border-radius: 15px; 
+    box-shadow: 0 9px #999;}
+#b1:hover {background-color: #0db437}
+#b1:active {
+background-color: #3e8e41;box-shadow: 0 5px #666;transform: translateY(4px);}
+
+
+    </style>
+</head>
+<body>
+    
+  <div id="h"></div><h2 id="noun">Noun</h2>
+<p>Nouns are words that indicate a person, place, or thing.</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="noun.htm" id="b1">noun</a></li>
+      <li><a href="pronoun.htm" id="b1">Pronoun</a></li>
+      <li><a href="subject.htm" id="b1">Sentence</a></li>
+      <li><a href="voice.htm" id="b1">voice</a></li>
+      <li><a href="dictionary.htm" id="b1">dictionary</a></li>
+      <li><a href="MCQgame.htm" id="b1">MCQgame</a></li>
+      <li><a href="vocabAmerican.htm" id="b1">Vocabalary 1</a></li>     
+      <li><a href="vocabProverb.htm" id="b1">Vocabalary 2</a></li>
+      <li><a href="VocabTravel.htm" id="b1">Vocabalary 2</a></li>
+      <li><a href="signin.htm" id="b1">SignIN</a></li>
+
+      
+    </ul>
+  </div>
+  <script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>  <!-- 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222right menu 75%-->
+  <div class="right" style="background-color:#ddd;">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            The Subject
+          </button>
+        </h2></div>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            The subject in a sentence or clause is the person or thing doing, performing, or
+            controlling the action of the verb. For example:
+            • “The dog chased its tail.” (The noun dog is performing the action of the verb
+            chase.)
+            • “Mary reads a book every week.” (The proper noun Mary is performing the
+            action of the verb read.) </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Objects
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Grammatical objects have three grammatical roles: the direct object of a verb,
+            the indirect object of a verb, or the object of a preposition.
+            <h3>Direct objects</h3>
+            Direct objects are what receive the action of the verb in a sentence or clause.
+            For example:
+            • “The dog chased its tail.” (The noun tail is receiving the action of the verb
+            chase.)
+            • “Mary reads a book every week.” (The noun book is receiving the action of the
+            verb read.)
+           <h3> Indirect objects</h3>
+            An indirect object is the person or thing who receives the direct object of the
+            verb. For instance:
+            • “Please pass Jeremy the salt.” (The proper noun Jeremy is receiving the direct
+            object salt, which receives the action of the verb pass.)
+            • “I sent the company an application for the job.” (The noun company is
+            receiving the direct object application, which receives the action of the verb
+            sent.)           </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Categories of Nouns
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            There are several different types of noun, as follows:
+            Common noun. <br>
+            Proper noun.<br>
+            Concrete noun.<br>
+            Abstract noun.<br>
+            Collective nouns<br></div>
+      </div> </div>   <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              common nouns
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Nouns that identify general people, places, or things are called common nouns
+—they name or identify that which is common among others  
+        <br>All nouns serve to name a person, place, or thing.
+        Those that identify general people, places, or things are called common nouns
+        —they name that which is common among others.
+        For example:
+        • “He sat on the chair.”<br>
+        • “I live in a city.”<br>
+        • “We met some people.”<br>
+        • “She went into politics.””<br>
+        • “Our teacher is angry.””<br>
+        • “Let’s go down to the lake.””<br>
+        </div></div></div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Proper Nouns
+
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Proper nouns, on the other hand, are used to identify a unique person, place, or
+              thing. A proper noun names someone or something that is one of a kind, which is
+              signified by the use of a capital letter, no matter where it appears in a sentence.
+              N  </div>
+        </div> </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Common Nouns
+
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              All nouns serve to name a person, place, or thing.
+              Those that identify general people, places, or things are called common nouns
+              —they name that which is common among others.
+              For example:
+              • “He sat on the chair.”<br>
+              • “I live in a city.”<br>
+              • “We met some people.”<br>
+              • “She went into politics.”<br>
+              • “Our teacher is angry.”<br>
+              • “Let’s go down to the lake.”  </div>
+        </div> </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Concrete and Abstract Nouns
+
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              All nouns serve to name a person, place, or thing. Depending on whether they
+              name a tangible or an intangible thing, nouns are classed as being either
+              concrete or abstract. <br>Concrete nouns name people, places, animals, or things that are or were
+              physically tangible—that is, they can or could be seen or touched, or have some
+              physical properties. For instance:
+              rocks<br>
+              lake<br>
+              countries<br>
+              people<br>
+              child<br>
+              air<br>
+              water<br>
+              bread<br>
+              <h4>Abstract Nouns              </h4>
+              Abstract nouns, as their name implies, name intangible things, such as
+concepts, ideas, feelings, characteristics, attributes, etc.—you cannot see or
+touch these kinds of things.
+Here are some examples of abstract nouns:
+love
+hate
+decency
+conversation
+emotion
+aspiration
+excitement
+letharg
+            
+        </div> 
+    </div></div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          Countable Nouns vs. Uncountable
+          Nouns
+          
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Countable nouns (also known as count nouns) are, as the name suggests, nouns
+          that can be counted as individual units.
+          Uncountable nouns, on the other hand, are nouns that cannot be considered as
+separate units. They are also known as non-count or mass nouns.
+a cup – two cups
+an ambulance – several ambulances
+a phone – 10 phones
+a person – many people
+
+        
+    </div> 
+</div></div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingNine">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      Singular and Plural
+
+    </button>
+  </h2>
+  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+<h3>Singular</h3>
+When a noun is singular and names a person (or, sometimes, a pet) whose gender
+is known,* then we use the third-person singular he, him, or his (masculine) or
+she, her, or hers (feminine). For example:
+• “The man left early, so I didn’t get a chance to talk to him.” (Man is singular,
+so it takes the third-person singular pronoun him.)
+• “The president has many things that she wants to accomplish in office.”
+(President is singular, so it takes the third-person singular pronoun she.)
+• “We taught our dog to know which bed is his.” (Dog is singular, so it takes the
+third-person singular pronoun his.)
+If the noun names a singular place, thing, or non-domestic animal, then we must
+use the third-person neuter pronoun it:
+• “I hate this computer because it is so slow!”
+• “The cow lowed softly as it ate.”
+• “Some people dislike this town, but I’ve always loved it.”
+<h3>Plural</h3>
+When a noun is plural, we use the same third-person pronouns for people,
+places, animals, and things: they, them, and theirs*. For example:
+• “The parade floats are spectacular! I love watching them go down the street.”
+• “Bill and Samantha told me they were coming over later.”
+• “Make sure the children know which bags are theirs.”<h3></h3>
+    
+</div> 
+</div></div></div></div>
+  
+<div id="f"></div>
+
+
+</body>
+</html>

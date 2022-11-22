@@ -1,0 +1,46 @@
+<style>
+     body {font-family: Arial, Helvetica, sans-serif;}
+     .navbar img{
+       margin-left: 10px;
+       margin-right: 20px;
+     }
+.navbar {  width: 100%;  background-color: rgb(17, 172, 233);  overflow: auto;}
+.navbar a {    padding: 12px;  color: white;  text-decoration: none;  font-size: 17px;}
+.navbar a:hover {  background-color: #000;border: #333;
+                 border-radius: 20px;}
+.active {  background-color: #04AA6D;
+}
+.navbar img{
+       margin-left: 10px;height: 70px;border: #333;
+                 border-radius: 50%;
+       margin-right: 20px;width: 120px;
+     }
+  
+  /* Change color on hover */
+  
+  .navbar a:hover {
+                  background-color: rgb(221, 211, 211);
+                  color: rgb(8, 173, 44);border: #333;
+                 border-radius: 20px;
+                  }
+  
+  /* Active/current link */
+  .navbar a.active {
+                  background-color: rgb(14, 6, 6);
+                  color: white;border: #333;
+                 border-radius: 20px;
+                  }
+@media screen and (max-width: 500px) {  .navbar a {    float: none;    display: block;  }}     
+  
+  /* Style the body */  body {          font-family: Arial, Helvetica, sans-serif;          margin: 0;          }
+  
+</style>
+<div class="navbar">
+               <img src="/image/LOGO2.png" height="50px" width="80px" alt="" srcset="">
+                  <a class="index" href="index.htm"><i class="fa fa-fw fa-home"></i> Home</a> 
+                  <a href="dictionary.htm"><i class="fa fa-fw fa-search"></i> Dictionary</a> 
+                  <a href="course.htm"><i class="fa fa-fw fa-envelope"></i> Course</a> 
+                  <a href="MCQgame.htm"><i class="fa fa-fw fa-envelope"></i> Game</a> 
+                  <a href="Vocab.htm"><i class="fa fa-fw fa-user"></i> Vocab</a>
+                  <a href="about.htm"><i class="fa fa-fw fa-user"></i> About</a>
+                </div>

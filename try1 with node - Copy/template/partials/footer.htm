@@ -1,0 +1,187 @@
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+  /* Footer */
+  .footer {
+              padding: 20px;
+              text-align: center;
+              background: #ddd;
+              }
+  /* login form rt */
+  .open-button {
+      background-color: #555;
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position:absolute;
+      bottom: 13px;
+      right: 28px;
+      width: 80px;            float: left;
+  font-size: medium;
+  margin-top: 20px;
+      text-align: center;
+  margin-right: 60px;
+      text-decoration: none;
+      }
+  
+  /* The popup form - hidden by default */
+  .form-popup {    background-color: rgb(28, 201, 224);
+          display: none;
+          position: fixed;
+          bottom: 0;
+          right: 15px;
+          border: 3px solid #f1f1f1;
+          z-index: 9;
+          }
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+      opacity: 1;
+    }
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /* footer */
+  .main-content{
+    display: inline;
+    display: flex;
+}
+.leftbox{ margin-left: 50px;
+width: 30%;
+border: aqua;
+border-width: 5px;
+border-radius: 30px;
+background-color: rgb(230, 230, 238);
+padding-left: 12px;padding-right: 21px;
+display: block;
+}
+.rightbox{ margin-left: 50px;
+width: 30%;
+border: aqua;
+border-width: 5px;
+border-radius: 30px;
+background-color: rgb(220, 220, 226);
+padding-left: 12px;padding-right: 21px;
+display: block;
+}
+.centerbox{
+margin-left: 50px;
+border: rgb(240, 59, 14);
+border-width: 50px;
+border-radius: 30px;
+background-color: rgb(224, 224, 230);
+padding-left: 12px;padding-right: 21px;
+display: block;
+}
+.bottom{
+margin-top: 50px;
+}
+  /* https://www.w3schools.com/howto/default.asp */
+  footer a{margin: 40px;
+  color: #1abc9c;font-weight: 80px;text-decoration: none;
+}
+  footer a:hover{font-weight: bolder;
+    
+  background: rgb(44, 39, 39);}
+  #ico{height: 30px;
+    background-color: azure;
+  }
+</style>
+<div class="footer">
+      <footer>
+        <div class="main-content">
+          <div class="leftbox">
+            <h2>About us</h2>
+            <div class="content">
+              <p>RISHI KI CODESHALA is a YouTube channel where you can learn web designing, web development, ui/ux designing, html css tutorial, hover animation and effects, javascript ,api call, node js,python,c++ and related so on.</p>
+             
+            </div>
+          </div>
+    
+          <div class="centerbox">
+            <h2>Address</h2> 
+            <span class="text">Nai basti, satna</span>
+           <span class="text">+089-765432100</span>           
+          
+                <span class="text">abc@example.com</span>
+              </div>               
+      
+    
+          <div class="rightbox">
+            <h2>Contact us</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><span id="ico">
+        <a href="#" class="fa fa-facebook icon-3x" style="font-size: 50px; border: 2px solid rgb(236, 234, 234);"></a>
+        <a href="#" class="fa fa-twitter icon-3x" style="font-size: 50px;border: 2px solid rgb(253, 247, 247);"></a>
+        <a href="#" class="fa fa-google icon-3x" style="font-size: 50px;border: 2px solid rgb(247, 243, 243);"></a>
+        <a href="#" class="fa fa-linkedin icon-3x" style="font-size: 50px;border: 2px solid rgb(252, 249, 249);"></a>
+        <a href="#" class="fa fa-youtube icon-3x" style="font-size: 50px;border: 2px solid rgb(241, 239, 239);"></a>
+        <a href="#" class="fa fa-instagram icon-3x"style="font-size: 50px;border: 2px solid rgb(241, 239, 239);"></a> </span>
+        <div class="bottom">
+          <center>
+            <span class="credit">Created By <a href="#">rishikicodeshala</a> | </span>
+            <span class="far fa-copyright"></span><span>@  2020 All rights reserved.</span>
+            <p>
+
+Disclaimer | Privacy & Cookies | Copyright</p>
+
+            
+          </center>
+        </div>
+      </footer>
+    
+
+</body>
+</html> 

@@ -1,0 +1,57 @@
+<html>
+    <head> <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+        <script>$(function (){$('#h').load('/partials/header.htm');});</script>
+        <script>$(function (){$('#f').load('/partials/footer.htm');});</script>
+       <link rel="stylesheet" href="table.css">
+    </head>
+    <body><div id="h"></div>
+        <h1>Vocabalary Table</h1>
+        <hr>
+        <table>
+         </table>
+        <script>
+            function tableCreate(){
+    var body = document.body,
+        tbl  = document.createElement('table');
+    tbl.style.paddingLeft  ="50px";
+    tbl.style.top  ="50%";
+    // tbl.style.border = '1px solid black';
+
+    for(var i = 0; i < 19; i++){
+        var tr = tbl.insertRow();
+        for(var j = 0; j < 3; j++){
+            var as2D = [
+    ["s.no","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t"]
+   , ["Hindi Meaning","जल्दी चलिए ","हम रास्ता भूल गए हैं ","यात्रा लंबी है"," मुझ आगरा जाना है ","तुम शीघ्र ही क्यों वापस आ गए"," आप कहां ठहरे  हुए हैं ","क्या आपने टिकट ले लिया ","तुम पैदल चलोगे या गाड़ी से","   मैं 10:30 बजे की गाड़ी से कोलकाता जाऊंगा"," हम साथ साथ चलेंगे"," इस वर्ष बद्रीनाथ मंदिर जून मास में फिर खुलेगा ","पंजाब मेल किस समय छूटता है ","हम समय पर पहुंच ","जाएंगे गाड़ी किस प्लेटफार्म पर आएगी रेलवे स्टेशन यहां से कितनी दूर है"," जल्दी कीजिए नहीं तो गाड़ी छूट जाएगी ","गाड़ी अब दिखाई नहीं देती ","मैं अपने भाई को स्टेशन पर विदा करने जा रहा हूं"," पैदल तो केवल 10 मिनट का रास्ता है"," मैं उन्हें लेने स्टेशन जा रहा हूं"]
+ ,["English Meaning","Hurry up please"," we have lost our way ","it is a long journey ","I have  to go to egg Agra ","why did you come back soon ","where are you staying ","have you brought the ticket"," will you  go on foot or by train ","I will go to Kolkata by the 10:30 train ","we will go   together"," the Badrinath temple will reopen in June ","this year  when does ","the Punjab mail live ","we will reach in time on which platform will the train arrived ","how far is the  railway station from here ","hurry up otherwise we will miss the train"," the train is out of sight now ","I am going to station to see off my brother"," it is  only 10 minute walk ","I am going to station to receive them" ]
+ 
+        ];         
+                var td = tr.insertCell();
+                td.appendChild(document.createTextNode(as2D[j][i]));
+                // td.style.border = '1px solid black';
+              
+            
+        }
+    }
+    body.appendChild(tbl);
+}
+tableCreate();
+        </script>
+        <div id="f"></div>
+
+    </body>
+</html>
+<!-- ["जल्दी चलिए ","हम रास्ता भूल गए हैं ","यात्रा लंबी है"," मुझे
+ आगरा जाना है ","तुम शीघ्र ही क्यों वापस आ गए"," आप कहां ठहरे
+  हुए हैं ","क्या आपने टिकट ले लिया ","तुम पैदल चलोगे या गाड़ी से"," 
+  मैं 10:30 बजे की गाड़ी से कोलकाता जाऊंगा"," हम साथ साथ चलेंगे"," इस वर्ष बद्रीनाथ मंदिर जून मास में फिर खुलेगा ","पंजाब मेल किस समय छूटता है ","हम समय पर पहुंच ","जाएंगे गाड़ी किस प्लेटफार्म पर
+ आएगी रेलवे स्टेशन यहां से कितनी दूर है"," जल्दी कीजिए नहीं तो गाड़ी छूट जाएगी ","गाड़ी अब दिखाई नहीं देती ","मैं अपने भाई को स्टेशन पर विदा करने जा रहा हूं"," पैदल तो केवल 10 मिनट का रास्ता है"," मैं उन्हें लेने स्टेशन जा रहा हूं"]
+ ["Hurry up please"," we have lost our way ","it is a long journey ","I have
+  to go to egg Agra ","why did you come back soon ","where are you staying have you brought the ticket will you
+  go on foot or by train ","I will go to Kolkata by the 10:30 train ","we will go
+   together"," the Badrinath temple will reopen in June ","this year
+  when does ","the Punjab mail live ","we will reach in time on which platform will the train arrived ","how far is the 
+ railway station from here ","hurry up otherwise we will miss the train"," the train is out of sight 
+ now ","I am going to station to see off my brother"," it is
+  only 10 minute walk ","I am going to station to receive them"
+ ] -->

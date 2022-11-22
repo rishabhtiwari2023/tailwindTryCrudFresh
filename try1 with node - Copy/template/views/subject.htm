@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="noun.css"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+<script>$(function (){$('#h').load('/partials/header.htm');});</script>
+<script>$(function (){$('#f').load('/partials/footer.htm');});</script>
+
+</head>
+<body>
+<!-- 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000header -->
+<div id="h"></div><!--11111111111111111111111111111111111111111111111111111111111111111111111111111111111 html menu -->
+
+
+<h2 id="noun">sentence</h2>
+<p>A group of word which makes complete sense is called a sentence. <br>For example Ramu writes a book <br>he reads tense<br> they brings a lot of mangoes</p>
+
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="noun.htm" id="b1">noun</a></li>
+      <li><a href="pronoun.htm" id="b1">Pronoun</a></li>
+      <li><a href="subject.htm" id="b1">Sentence</a></li>
+      <li><a href="voice.htm" id="b1">voice</a></li>
+      <li><a href="dictionary.htm" id="b1">dictionary</a></li>
+      <li><a href="MCQgame.htm" id="b1">MCQgame</a></li>
+      <li><a href="vocabAmerican.htm" id="b1">Vocabalary 1</a></li>     
+      <li><a href="vocabProverb.htm" id="b1">Vocabalary 2</a></li>
+      <li><a href="VocabTravel.htm" id="b1">Vocabalary 2</a></li>
+      <li><a href="signin.htm" id="b1">SignIN</a></li>
+
+      
+    </ul>
+  </div>
+  <script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>  <!-- 22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222right menu 75%-->
+  <div class="right" style="background-color:#ddd;">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Parts of sentence
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h3>subject</h3> the person are things we are talking about is called subject <br> for example Harry plays football Hindi sentence Harry is a subject
+            <h3>Predicate</h3>Predicate what is said about the subject it is called predicate <br> in above example plays football is a predicate </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Kinds of sentences
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body"><p> Kinds of sentences:--
+            * assertive sentence <br>*  interrogative sentence <br># imperative sentence <br> exclamatory sentence <br> optative sentence  </p>
+                 
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Assertive sentence
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Assertive sentence a sentence that makes a a statement and sewing affirmation is called assertive sentence  <br>for example Rahul makes food.  <br>Shyam is doing his homework.
+      </div>  </div>  <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                interrogative sentence
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                 interrogative sentence  <br>a sentence which asks a question about something is called interrogative sentence <br> for example  <br>do you like this website? <br>Is Ram here?
+        </div></div> 
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Imperative sentences
+
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Imperative sentences a sentence which expresses a command request are prohibition are called imperative sentence for example come inside go outside sit here </div>
+        </div> </div> 
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                exclamatory sentences
+
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                exclamatory sentences a sentence which express a sudden feeling of mind is called exclamatory sentences. for example hurray we won the match. Alas !I defeated, what a beautiful flower it is
+        </div> </div> 
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Optative sentences
+
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Optative sentences a sentence which shows a wish or prayer is called optative sentences.For example may you live long .may you get job soon.
+            
+        </div> 
+    </div></div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          Countable Nouns vs. Uncountable
+          Nouns
+          
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Countable nouns (also known as count nouns) are, as the name suggests, nouns
+          that can be counted as individual units.
+          Uncountable nouns, on the other hand, are nouns that cannot be considered as
+separate units. They are also known as non-count or mass nouns.
+a cup – two cups
+an ambulance – several ambulances
+a phone – 10 phones
+a person – many people
+
+        
+    </div> 
+</div></div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingNine">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+      Singular and Plural
+
+    </button>
+  </h2>
+  <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+<h3>Singular</h3>
+When a noun is singular and names a person (or, sometimes, a pet) whose gender
+is known,* then we use the third-person singular he, him, or his (masculine) or
+she, her, or hers (feminine). For example:
+• “The man left early, so I didn’t get a chance to talk to him.” (Man is singular,
+so it takes the third-person singular pronoun him.)
+• “The president has many things that she wants to accomplish in office.”
+(President is singular, so it takes the third-person singular pronoun she.)
+• “We taught our dog to know which bed is his.” (Dog is singular, so it takes the
+third-person singular pronoun his.)
+If the noun names a singular place, thing, or non-domestic animal, then we must
+use the third-person neuter pronoun it:
+• “I hate this computer because it is so slow!”
+• “The cow lowed softly as it ate.”
+• “Some people dislike this town, but I’ve always loved it.”
+<h3>Plural</h3>
+When a noun is plural, we use the same third-person pronouns for people,
+places, animals, and things: they, them, and theirs*. For example:
+• “The parade floats are spectacular! I love watching them go down the street.”
+• “Bill and Samantha told me they were coming over later.”
+• “Make sure the children know which bags are theirs.”<h3></h3>
+    
+</div> 
+</div></div>
+  
+
+  </div>
+</div>
+<div id="f"></div>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
