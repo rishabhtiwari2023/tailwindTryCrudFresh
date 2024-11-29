@@ -1,8 +1,8 @@
 // myscript.js
 
-document.getElementById("clickMeButton").addEventListener("click", function() {
-  alert("Button was clicked!");
-});
+// document.getElementById("clickMeButton").addEventListener("click", function() {
+//   alert("Button was clicked!");
+// });
 (function() {
   // Injecting the CSS styles dynamically
   const style = document.createElement('style');
